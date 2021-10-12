@@ -8,7 +8,7 @@ export class MyprojectStack extends cdk.Stack {
     super(scope, id, props);
   // 👇 create the VPC
   const vpc=new ec2.Vpc(this,'VPC-tsc',{
-    cidr:'10.0.0.0/18',
+    cidr:'10.0.0.0/16',
     maxAzs:3,
     subnetConfiguration:[
       {
