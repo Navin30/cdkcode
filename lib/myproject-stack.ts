@@ -6,7 +6,7 @@ import * as s3 from '@aws-cdk/aws-s3';
 export class MyprojectStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-  // 👇 create the VPC
+  // 👇 create the VPC.
   const vpc=new ec2.Vpc(this,'VPC-tsc',{
     cidr:'10.0.0.0/16',
     maxAzs:3,
