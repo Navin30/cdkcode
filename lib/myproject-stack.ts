@@ -117,8 +117,8 @@ export class MyprojectStack extends cdk.Stack {
     });
 
     // 👇 create s3
-    new s3.Bucket(this, 'cdknv-1001', {
-      bucketName: 'cdknv-1001',
+    new s3.Bucket(this, 'service-cdknv', {
+      bucketName: 'service-cdknv',
       publicReadAccess: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY
       
