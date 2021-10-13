@@ -76,7 +76,7 @@ export class MyprojectStack extends cdk.Stack {
       machineImage: new ec2.AmazonLinuxImage({
         generation: ec2.AmazonLinuxGeneration.AMAZON_LINUX_2,
       }),
-      keyName:'key',
+      //keyName:'key',
     });
     // 👇 create RDS instance
     const dbInstance = new rds.DatabaseInstance(this, 'db-instance', {
